@@ -1,54 +1,31 @@
-<div align="center">
-  
-  ![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/portfolio)
-  ![GitHub stars](https://img.shields.io/github/stars/codewithsadee/portfolio?style=social)
-  ![GitHub forks](https://img.shields.io/github/forks/codewithsadee/portfolio?style=social)
-  [![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee)
-  [![YouTube Video Views](https://img.shields.io/youtube/views/SAu7e09vXoQ?style=social)](https://youtu.be/SAu7e09vXoQ)
+# Shivam Dwivedi — personal portfolio
 
-  <br />
-  <br />
+Live at **https://panditshivam.github.io/**.
 
-  <h2 align="center">Personal Portfolio Website</h2>
+A responsive, accessible static portfolio covering applied AI, ML architecture, professional experience, research, and writing. Built with HTML, CSS, and vanilla JavaScript; no dependencies or build step.
 
-  Fully responsive personal portfolio website, <br />Responsive for all devices, built using HTML, CSS, and JavaScript.
+## Preview locally
 
-  <a href="https://codewithsadee.github.io/portfolio/"><strong>➥ Live Demo</strong></a>
-
-</div>
-
-<br />
-
-### Demo Screeshots
-
-![Portfolio Desktop Demo](./readme-images/desktop.png "Desktop Demo")
-
-### Prerequisites
-
-Before you begin, ensure you have met the following requirements:
-
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
-
-### Run Locally
-
-To run **Portfolio** locally, run this command on your git bash:
-
-Linux and macOS:
-
-```bash
-sudo git clone https://github.com/codewithsadee/portfolio.git
+```sh
+python3 -m http.server 4173 --bind 127.0.0.1
 ```
 
-Windows:
+Open http://127.0.0.1:4173.
 
-```bash
-git clone https://github.com/codewithsadee/portfolio.git
-```
+## Edit
 
-### Contact
+- `index.html`: portfolio content, publication links, contact information, SEO metadata, and structured data.
+- `assets/portfolio/style.css`: design tokens, layouts, responsive breakpoints, reduced-motion and print styles.
+- `assets/portfolio/site.js`: project filters, case-study dialogs, mobile navigation, and email copying. Full case-study text lives in the `cases` object.
+- `assets/portfolio/intelligence.svg`: original vector illustration.
+- `assets/images/1.jpeg`: existing profile portrait, retained from this repository.
 
-If you want to contact with me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
+Content was adapted from https://github.com/panditshivam/panditshivam. Case studies distinguish internal benchmark results from general performance claims. Visual diagrams are illustrative; they contain no client data. Update the HTML and case-study text together when changing professional outcomes.
 
-### License
+## Deployment
 
-This project is **free to use** and does not contains any license.
+GitHub Pages publishes `main` from the repository root. Push updates to `main`; check the Pages build in the repository Actions tab. The `.nojekyll` file keeps this a plain static deployment. Relative asset paths also support a project-site deployment.
+
+Typography uses Google Fonts with local system fallbacks. No analytics, contact backend, API keys, or third-party JavaScript are required. Contact uses email and social profile links.
+
+Historical template assets and the original license are retained. The redesigned entry point uses only `assets/portfolio/` and the existing portrait.
