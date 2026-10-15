@@ -137,3 +137,46 @@ const wave = document.querySelector(".waveform");
     wave.append(bar);
   },
 );
+
+const momentsTrack = document.querySelector("#moments-track");
+function moveMoments(direction) {
+  const maxScroll = Math.max(
+    0,
+    momentsTrack.scrollWidth - momentsTrack.clientWidth,
+  );
+  if (maxScroll <= 1) return;
+  const tileWidth = momentsTrack
+    .querySelector(".moment-photo")
+    .getBoundingClientRect().width;
+  const gap = parseFloat(getComputedStyle(momentsTrack).columnGap) || 14;
+  const current = momentsTrack.scrollLeft;
+  const target =
+    direction > 0
+      ? current >= maxScroll - 2
+        ? 0
+        : Math.min(maxScroll, current + tileWidth + gap)
+      : current <= 2
+        ? maxScroll
+        : Math.max(0, current - tileWidth - gap);
+  momentsTrack.scrollTo({ left: target });
+}
+document
+  .querySelector("#moments-prev")
+  .addEventListener("click", () => moveMoments(-1));
+document
+  .querySelector("#moments-next")
+  .addEventListener("click", () => moveMoments(1));
+momentsTrack.addEventListener("keydown", (event) => {
+  if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
+    event.preventDefault();
+    moveMoments(event.key === "ArrowRight" ? 1 : -1);
+  } else if (event.key === "Home" || event.key === "End") {
+    event.preventDefault();
+    momentsTrack.scrollTo({
+      left:
+        event.key === "Home"
+          ? 0
+          : momentsTrack.scrollWidth - momentsTrack.clientWidth,
+    });
+  }
+});

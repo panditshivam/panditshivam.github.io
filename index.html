@@ -79,8 +79,8 @@
         </button>
         <nav id="navigation" aria-label="Main navigation">
           <a href="#work">Selected work</a><a href="#about">About</a
-          ><a href="#moments">Moments</a><a href="#research">Research</a
-          ><a href="#writing">Writing</a
+          ><a href="#research">Research</a><a href="#writing">Writing</a
+          ><a href="#moments">Moments</a
           ><a class="nav-contact" href="#contact"
             >Let’s talk <span aria-hidden="true">↗</span></a
           >
@@ -626,77 +626,6 @@
       </section>
 
       <section
-        class="moments-section container"
-        id="moments"
-        aria-labelledby="moments-title"
-      >
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">05 / MOMENTS ALONG THE WAY</p>
-            <h2 id="moments-title">
-              Beyond the systems.<br /><span class="muted"
-                >People, places, possibility.</span
-              >
-            </h2>
-          </div>
-          <p class="section-intro">
-            The teams, conversations, and places<br class="desktop-br" />
-            that make the journey worthwhile.
-          </p>
-        </div>
-        <div class="moments-grid">
-          <figure class="moment-photo moment-team">
-            <div class="moment-frame">
-              <img
-                src="assets/portfolio/photos/pulastya-team.jpg"
-                width="1800"
-                height="1350"
-                loading="lazy"
-                decoding="async"
-                alt="Pulastya team at the Startup Mahakumbh exhibition booth"
-              />
-            </div>
-            <figcaption>
-              <span class="eyebrow">STARTUP MAHAKUMBH</span>
-              <p>Building with the Pulastya team.</p>
-            </figcaption>
-          </figure>
-          <figure class="moment-photo moment-london">
-            <div class="moment-frame">
-              <img
-                src="assets/portfolio/photos/london-tech-week.jpg"
-                width="1350"
-                height="1800"
-                loading="lazy"
-                decoding="async"
-                alt="Group photo at London Tech Week’s Centre Stage"
-              />
-            </div>
-            <figcaption>
-              <span class="eyebrow">LONDON TECH WEEK</span>
-              <p>Ideas and conversations beyond the lab.</p>
-            </figcaption>
-          </figure>
-          <figure class="moment-photo moment-campus">
-            <div class="moment-frame">
-              <img
-                src="assets/portfolio/photos/iit-patna.jpg"
-                width="1800"
-                height="1350"
-                loading="lazy"
-                decoding="async"
-                alt="The entrance to the Indian Institute of Technology Patna"
-              />
-            </div>
-            <figcaption>
-              <span class="eyebrow">IIT PATNA</span>
-              <p>A new chapter in explainable AI research.</p>
-            </figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <section
         class="research-section"
         id="research"
         aria-labelledby="research-title"
@@ -704,7 +633,7 @@
         <div class="container">
           <div class="section-heading">
             <div>
-              <p class="eyebrow">06 / RESEARCH &amp; RECOGNITION</p>
+              <p class="eyebrow">05 / RESEARCH &amp; RECOGNITION</p>
               <h2 id="research-title">Curiosity, <em>published.</em></h2>
             </div>
             <p class="section-intro">
@@ -827,7 +756,7 @@
       >
         <div class="section-heading">
           <div>
-            <p class="eyebrow">07 / NOTES FROM THE FIELD</p>
+            <p class="eyebrow">06 / NOTES FROM THE FIELD</p>
             <h2 id="writing-title">Thinking out loud.</h2>
           </div>
           <a
@@ -928,6 +857,87 @@
                 >Medium ↗</a
               >
             </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="moments-section container"
+        id="moments"
+        aria-labelledby="moments-title"
+        aria-roledescription="carousel"
+      >
+        <div class="moments-intro">
+          <div>
+            <p class="eyebrow">07 / MOMENTS ALONG THE WAY</p>
+            <h2 id="moments-title">A few stops on the journey.</h2>
+          </div>
+          <div class="moments-controls">
+            <span>03 PHOTOS</span>
+            <button
+              type="button"
+              id="moments-prev"
+              aria-label="Previous photos"
+              aria-controls="moments-track"
+            >
+              <span aria-hidden="true">←</span>
+            </button>
+            <button
+              type="button"
+              id="moments-next"
+              aria-label="Next photos"
+              aria-controls="moments-track"
+            >
+              <span aria-hidden="true">→</span>
+            </button>
+          </div>
+        </div>
+        <div class="moments-viewport">
+          <div
+            class="moments-track"
+            id="moments-track"
+            tabindex="0"
+            role="group"
+            aria-label="Photo gallery. Swipe or use the left and right arrow keys to browse."
+          >
+            <figure class="moment-photo moment-team">
+              <div class="moment-frame">
+                <img
+                  src="assets/portfolio/photos/pulastya-team.jpg"
+                  width="1800"
+                  height="1350"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Pulastya team at the Startup Mahakumbh exhibition booth"
+                />
+              </div>
+              <figcaption>Startup Mahakumbh</figcaption>
+            </figure>
+            <figure class="moment-photo moment-london">
+              <div class="moment-frame">
+                <img
+                  src="assets/portfolio/photos/london-tech-week.jpg"
+                  width="1350"
+                  height="1800"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Group photo at London Tech Week’s Centre Stage"
+                />
+              </div>
+              <figcaption>London Tech Week</figcaption>
+            </figure>
+            <figure class="moment-photo moment-campus">
+              <div class="moment-frame">
+                <img
+                  src="assets/portfolio/photos/iit-patna.jpg"
+                  width="1800"
+                  height="1350"
+                  loading="lazy"
+                  decoding="async"
+                  alt="The entrance to the Indian Institute of Technology Patna"
+                />
+              </div>
+              <figcaption>IIT Patna</figcaption>
+            </figure>
           </div>
         </div>
       </section>

@@ -19,7 +19,7 @@ Open http://127.0.0.1:4173.
 - `assets/portfolio/site.js`: project filters, case-study dialogs, mobile navigation, and email copying. Full case-study text lives in the `cases` object.
 - `assets/portfolio/intelligence.svg`: original vector illustration.
 - `assets/portfolio/profile.jpg`: supplied profile portrait, displayed in black and white through CSS.
-- `assets/portfolio/photos/`: web-ready versions of supplied photos from Startup Mahakumbh, London Tech Week, and IIT Patna, used in the Moments section.
+- `assets/portfolio/photos/`: web-ready versions of supplied photos from Startup Mahakumbh, London Tech Week, and IIT Patna, used in the compact Moments carousel above the footer.
 
 Content was adapted from https://github.com/panditshivam/panditshivam and the supplied professional resume. Case studies distinguish internal benchmark results from general performance claims. Visual diagrams are illustrative; they contain no client data. Update the HTML and case-study text together when changing professional outcomes.
 
