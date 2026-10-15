@@ -2035,87 +2035,45 @@ dialog::backdrop {
   color: #c3b4ce;
 }
 
-/* Compact photo carousel above the footer. */
+/* Small photo thumbnails in one horizontal row above the footer. */
 .moments-section {
-  display: grid;
-  grid-template-columns: minmax(200px, 1fr) minmax(0, 640px);
-  gap: 40px;
+  display: flex;
   align-items: center;
-  padding-top: 36px;
-  padding-bottom: 28px;
+  justify-content: space-between;
+  gap: 28px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   border-bottom: 1px solid var(--line);
 }
 .moments-intro h2 {
-  font-size: 25px;
-  line-height: 1.3;
-  max-width: 290px;
-  margin-top: 12px;
-}
-.moments-intro .eyebrow {
-  font-size: 8px;
-}
-.moments-controls {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 21px;
-}
-.moments-controls > span {
-  font: 8px monospace;
-  letter-spacing: 0.1em;
-  color: var(--muted);
-  margin-right: 12px;
-}
-.moments-controls button {
-  display: grid;
-  place-items: center;
-  width: 36px;
-  height: 36px;
-  border: 1px solid #53483b;
-  border-radius: 50%;
-  background: transparent;
-  color: var(--accent);
-  font-size: 16px;
-  transition: background 0.2s;
-}
-.moments-controls button:hover {
-  background: #d5a58315;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: -0.025em;
 }
 .moments-viewport {
+  flex: 0 1 456px;
+  width: 100%;
   min-width: 0;
+  max-width: 456px;
 }
 .moments-track {
   display: flex;
-  gap: 14px;
-  overflow-x: auto;
-  overflow-y: hidden;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  overscroll-behavior-x: contain;
-  scrollbar-width: none;
-  padding: 3px 2px 10px;
-  border-radius: 4px;
-}
-.moments-track::-webkit-scrollbar {
-  display: none;
-}
-.moments-track:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 5px;
+  flex-wrap: nowrap;
+  gap: 12px;
 }
 .moment-photo {
-  flex: 0 0 240px;
+  flex: 0 1 144px;
+  width: 144px;
   min-width: 0;
   margin: 0;
-  scroll-snap-align: start;
 }
 .moment-frame {
   position: relative;
-  height: 140px;
+  height: 92px;
   overflow: hidden;
-  background: #23221e;
   border: 1px solid var(--line);
   border-radius: 4px;
+  background: #23221e;
 }
 .moment-frame img {
   position: absolute;
@@ -2124,9 +2082,6 @@ dialog::backdrop {
   height: 100%;
   object-fit: cover;
   filter: saturate(0.85) brightness(0.94);
-  transition:
-    transform 0.45s ease,
-    filter 0.45s ease;
 }
 .moment-team img {
   object-position: 50% 51%;
@@ -2138,70 +2093,28 @@ dialog::backdrop {
   object-position: 50% 62%;
 }
 .moment-photo figcaption {
-  padding-top: 9px;
-  font-size: 10px;
+  padding-top: 6px;
+  font-size: 9px;
+  line-height: 1.5;
   color: var(--muted);
-}
-@media (hover: hover) {
-  .moment-photo:hover img {
-    transform: scale(1.025);
-    filter: saturate(1) brightness(1);
-  }
-}
-@media (max-width: 1000px) {
-  .moments-section {
-    grid-template-columns: minmax(180px, 0.8fr) minmax(0, 1.4fr);
-    gap: 28px;
-  }
-  .moments-intro h2 {
-    font-size: 22px;
-  }
 }
 @media (max-width: 600px) {
   .moments-section {
-    grid-template-columns: 1fr;
-    gap: 17px;
-    padding-top: 28px;
+    display: block;
+    padding-top: 20px;
     padding-bottom: 20px;
   }
-  .moments-intro {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 15px;
-  }
   .moments-intro h2 {
-    font-size: 20px;
-    max-width: 210px;
-    margin-top: 8px;
+    font-size: 16px;
+    margin-bottom: 12px;
   }
-  .moments-intro .eyebrow {
-    font-size: 6px;
-  }
-  .moments-controls {
-    flex-shrink: 0;
-    margin-top: 0;
-    gap: 6px;
-  }
-  .moments-controls > span {
-    display: none;
-  }
-  .moments-controls button {
-    width: 32px;
-    height: 32px;
-  }
-  .moment-photo {
-    flex-basis: 220px;
+  .moments-track {
+    gap: 10px;
   }
   .moment-frame {
-    height: 130px;
+    height: 68px;
   }
-}
-@media (prefers-reduced-motion: reduce) {
-  .moments-track {
-    scroll-behavior: auto;
-  }
-  .moment-photo:hover img {
-    transform: none;
+  .moment-photo figcaption {
+    font-size: 8px;
   }
 }
