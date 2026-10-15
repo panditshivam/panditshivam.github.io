@@ -20,7 +20,7 @@ Open http://127.0.0.1:4173.
 - `assets/portfolio/intelligence.svg`: original vector illustration.
 - `assets/portfolio/profile.jpg`: supplied profile portrait, displayed in its original colors.
 
-Content was adapted from https://github.com/panditshivam/panditshivam. Case studies distinguish internal benchmark results from general performance claims. Visual diagrams are illustrative; they contain no client data. Update the HTML and case-study text together when changing professional outcomes.
+Content was adapted from https://github.com/panditshivam/panditshivam and the supplied professional resume. Case studies distinguish internal benchmark results from general performance claims. Visual diagrams are illustrative; they contain no client data. Update the HTML and case-study text together when changing professional outcomes.
 
 ## Deployment
 

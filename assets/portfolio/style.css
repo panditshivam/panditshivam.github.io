@@ -1996,3 +1996,40 @@ dialog::backdrop {
     font-size: clamp(47px, 7vw, 70px);
   }
 }
+
+/* Content and generative vision case-study illustrations. */
+.content-project {
+  background: radial-gradient(ellipse at 60% 35%, #3b3427, #24211b 80%);
+}
+.vision-project {
+  background: radial-gradient(ellipse at 60% 35%, #3a3042, #25212b 80%);
+}
+.pipeline-view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(5px, 1vw, 16px);
+  height: 140px;
+}
+.pipeline-view > span {
+  border: 1px solid #8c776750;
+  border-radius: 4px;
+  padding: 13px clamp(6px, 1vw, 15px);
+  background: #ffffff04;
+  color: #decebc;
+  font: 8px monospace;
+  letter-spacing: 0.06em;
+}
+.pipeline-view > i {
+  font-size: 16px;
+  font-style: normal;
+  color: #a58a70;
+}
+.vision-project .pipeline-view > span {
+  border-color: #9b85ad60;
+  color: #dccbe8;
+}
+.vision-project .art-metric > span,
+.vision-project .diagram-caption {
+  color: #c3b4ce;
+}
