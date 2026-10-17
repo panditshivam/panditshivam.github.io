@@ -945,6 +945,14 @@ h3 {
   overflow: hidden;
   background: #1e1e1b;
 }
+.study-visual {
+  background: #fff;
+}
+.study-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 .writing-card:hover .writing-visual {
   border-color: #75624d;
 }
