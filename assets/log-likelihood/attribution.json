@@ -1,0 +1,19 @@
+{
+  "assets": [
+    {
+      "file": "likelihoods.png",
+      "url": "https://panditshivam.github.io/assets/log-likelihood/likelihoods.png",
+      "sha256": "7b4281a3ecafcfe05c8447acb9021669aaabf49dbe994d29fbbf0963ff984088",
+      "rights": "Original plots from a completed deterministic synthetic arithmetic experiment; no external images or data.",
+      "description": "Measured likelihood arithmetic and model comparison; does not run inference."
+    },
+    {
+      "file": "weights.png",
+      "url": "https://panditshivam.github.io/assets/log-likelihood/weights.png",
+      "sha256": "9b5446f4988a5f588bfbcb5740df16a42919c76bcf16b4024fdb520002210bf2",
+      "rights": "Original plots from a completed deterministic synthetic arithmetic experiment; no external images or data.",
+      "description": "Measured likelihood arithmetic and model comparison; does not run inference."
+    }
+  ],
+  "private_material_included": false
+}
