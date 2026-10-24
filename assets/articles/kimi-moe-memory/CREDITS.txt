@@ -1,0 +1,1 @@
+storage-meme.png: Original captions and composition. Emoji graphics: Twemoji, by Twitter and other contributors. Graphics licensed CC BY 4.0: https://creativecommons.org/licenses/by/4.0/ . Source: https://github.com/jdecked/twemoji (15.1.0 graphics). Emoji arranged and combined with original text. Other figures are original charts from checked arithmetic.
